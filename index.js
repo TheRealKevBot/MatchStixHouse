@@ -15,7 +15,12 @@
 // matchHouses(87) ➞ 436
 
 function matchHouses(step) {
-	
+	let answer = 0
+    let house = 6
+    let addHouse = 5
+    step === 1 ? answer = house : null
+    step > 1 ? answer = house + ((step - 1) * addHouse) : null
+    return answer
 } 
 
 console.log(matchHouses(1), 6)
